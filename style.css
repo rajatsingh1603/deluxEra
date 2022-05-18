@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
 
-* {
-  margin: 0px;
-  padding: 0px;
 
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
 }
 
 /* Header CSS */
@@ -29,7 +32,7 @@
 
 .contact>ul>li,
 .social_media>ul>li {
-  padding: 15px;
+  padding: 10px;
   font-size: large;
   border-right: 1px solid white;
 
@@ -53,11 +56,25 @@ a:link {
   color: white;
 }
 
+.social_media_footer > ul > li{
+  list-style: none;
+  padding: 10px;
+  font-size: large;
+
+}
+
+.social_media_footer > ul > li>a{
+  color: white;
+}
+
+.social_media_footer > ul{
+  display: flex;
+}
 /*----------------------------------------------------------------------------------*/
 
 /*Navbar css */
 .navbar {
-  margin: 10px;
+  /* margin: 6px; */
   display: flex;
   justify-content: space-around;
 }
@@ -119,7 +136,7 @@ a:link {
 
 hr {
   width: 100px;
-  margin: auto;
+  
 
 
 }
@@ -571,3 +588,22 @@ h1 {
   font-family: 'Great Vibes', cursive;
   font-family: 'Pacifico', cursive;
 }
+
+.card > img{
+  transition: transform .2s; 
+}
+.card >img:hover{
+  transform: scale(1.5);
+}
+
+.logo_main{
+  margin-left: 100px;
+}
+
+.logo_sub{
+  margin-left: 200px;
+  
+}
+
+
+
