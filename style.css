@@ -607,5 +607,15 @@ h1 {
   
 }
 
+.startup_img > img{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.bg_w{
+  background-color: white;
+}
+
 
 
