@@ -674,4 +674,17 @@ input[type=checkbox]:checked ~ .navbar_items{
   /* flex-basis: fit-content; */
   flex-direction: column;
 }
+
+.logo_main {
+  margin-left: 0px;
+  color: #e6b800;
+}
+.logo_sub {
+  margin-left: 50px;
+  color: #e6b800;
+}
+.hamburger {
+  display: block;
+  margin-right: 26px;
+}
 }
