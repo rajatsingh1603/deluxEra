@@ -1,49 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap");
 
-
-
-
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 /* Header CSS */
-.social_media>ul>li,
-.contact>ul>li {
+.social_media > ul > li,
+.contact > ul > li {
   list-style: none;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #CCAB81;
+  background-color: #ccab81;
 }
 
-.social_media>ul,
-.contact>ul {
+.social_media > ul,
+.contact > ul {
   display: flex;
   color: white;
-
-
 }
 
-.contact>ul>li,
-.social_media>ul>li {
+.contact > ul > li,
+.social_media > ul > li {
   padding: 10px;
   font-size: large;
-  border-right: 1px solid white;
-
-
+  /* border-right: 1px solid white; */
 }
 
-.contact>ul {
+.contact > ul {
   margin-right: 200px;
 }
 
-.social_media>ul {
+.social_media > ul {
   margin-left: 150px;
 }
 
@@ -51,23 +45,22 @@ a:link {
   text-decoration: none;
 }
 
-.social_media>ul>li>a,
-.contact>ul>li>a {
+.social_media > ul > li > a,
+.contact > ul > li > a {
   color: white;
 }
 
-.social_media_footer > ul > li{
+.social_media_footer > ul > li {
   list-style: none;
   padding: 10px;
   font-size: large;
-
 }
 
-.social_media_footer > ul > li>a{
+.social_media_footer > ul > li > a {
   color: white;
 }
 
-.social_media_footer > ul{
+.social_media_footer > ul {
   display: flex;
 }
 /*----------------------------------------------------------------------------------*/
@@ -79,23 +72,20 @@ a:link {
   justify-content: space-around;
 }
 
-.navbar_items>ul {
+.navbar_items > ul {
   display: flex;
-
 }
 
-.navbar_items>ul>a>li {
+.navbar_items > ul > a > li {
   list-style: none;
   padding: 15px;
   font-size: 1.2em;
   border-right: 1px solid white;
   color: black;
-
-
 }
 
-.navbar_items>ul :hover {
-  background-color: #CCAB81;
+.navbar_items > ul :hover {
+  background-color: #ccab81;
   color: white;
 }
 
@@ -117,7 +107,6 @@ a:link {
   margin: 30px;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
 
 .cards {
@@ -126,29 +115,25 @@ a:link {
   margin: 50px;
 }
 
-.card_1>a>i {
-  color: #CCAB81;
+.card_1 > a > i {
+  color: #ccab81;
 }
 
-.card_1>h2 {
+.card_1 > h2 {
   padding: 20px;
 }
 
 hr {
   width: 100px;
-  
-
-
 }
 
 p {
   line-height: 2rem;
-
 }
 
 button {
   margin: 15px;
-  background-color: #CCAB81;
+  background-color: #ccab81;
   /* Green */
   border: none;
   color: white;
@@ -163,7 +148,6 @@ button {
   text-align: center;
   background-color: #6b5e5a;
 }
-
 
 /*--------------------------------------------------------------------*/
 .best_products {
@@ -201,7 +185,8 @@ div.item {
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
 }
 
@@ -235,7 +220,7 @@ input:nth-of-type(1) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(1):checked~main#carousel {
+input:nth-of-type(1):checked ~ main#carousel {
   --position: 1;
 }
 
@@ -244,7 +229,7 @@ input:nth-of-type(2) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(2):checked~main#carousel {
+input:nth-of-type(2):checked ~ main#carousel {
   --position: 2;
 }
 
@@ -253,7 +238,7 @@ input:nth-of-type(3) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(3):checked~main#carousel {
+input:nth-of-type(3):checked ~ main#carousel {
   --position: 3;
 }
 
@@ -262,7 +247,7 @@ input:nth-of-type(4) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(4):checked~main#carousel {
+input:nth-of-type(4):checked ~ main#carousel {
   --position: 4;
 }
 
@@ -271,14 +256,13 @@ input:nth-of-type(5) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(5):checked~main#carousel {
+input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
 
-
 /*----------------------------------------------------------------------*/
 
-.best_selling_products>h1 {
+.best_selling_products > h1 {
   color: white;
 }
 
@@ -286,7 +270,6 @@ input:nth-of-type(5):checked~main#carousel {
   background-color: #6b5e5a;
   text-align: center;
   padding: 50px;
-
 }
 
 .contact_head {
@@ -294,13 +277,9 @@ input:nth-of-type(5):checked~main#carousel {
   margin-top: 40px;
 }
 
-
 /*----------------------------------------------------------------------------------*/
 
-
-
-
-.card>img {
+.card > img {
   height: 300px;
   width: 300px;
 }
@@ -316,14 +295,11 @@ input:nth-of-type(5):checked~main#carousel {
   margin: 40px;
 }
 
-.card>img {
+.card > img {
   height: 250px;
   width: 250px;
   padding: 10px;
-
 }
-
-
 
 /*----------------------------------------------------------------------------------*/
 
@@ -333,8 +309,7 @@ input:nth-of-type(5):checked~main#carousel {
 }
 
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .container {
   width: 85%;
@@ -371,7 +346,7 @@ input:nth-of-type(5):checked~main#carousel {
 }
 
 .content .left-side::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 70%;
   width: 2px;
@@ -427,7 +402,7 @@ input:nth-of-type(5):checked~main#carousel {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
@@ -516,7 +491,6 @@ html {
   height: 100%;
 }
 
-
 /* product dropdown  */
 .dropdown .dropbtn {
   font-size: 16px;
@@ -535,7 +509,7 @@ html {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #CCAB81;
+  background-color: #ccab81;
   /* color: black */
 }
 
@@ -558,13 +532,11 @@ html {
   display: block;
   text-align: left;
   background-color: #fff;
-
-
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #CCAB81;
+  background-color: #ccab81;
 }
 
 /* Show the dropdown menu on hover */
@@ -585,37 +557,121 @@ h1 {
 
 .logo_sub {
   margin-left: 50px;
-  font-family: 'Great Vibes', cursive;
-  font-family: 'Pacifico', cursive;
+  font-family: "Great Vibes", cursive;
+  font-family: "Pacifico", cursive;
 }
 
-.card > img{
-  transition: transform .2s; 
+.card > img {
+  transition: transform 0.2s;
 }
-.card >img:hover{
+.card > img:hover {
   transform: scale(1.5);
 }
 
-.logo_main{
+.logo_main {
   margin-left: 100px;
   color: #e6b800;
 }
 
-.logo_sub{
+.logo_sub {
   margin-left: 200px;
   color: #e6b800;
-  
 }
 
-.startup_img > img{
+.startup_img > img {
   height: 100px;
   width: 100px;
   margin: 10px;
 }
 
-.bg_w{
+.bg_w {
   background-color: white;
 }
 
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
 
+/* responsive */
+@media only screen and (max-width: 960px) {
+  .header {
+    display: flex;
 
+    background-color: #ccab81;
+    flex-direction: column;
+  }
+  .social_media > ul {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.navbar_items > ul {
+  /* display: table; */
+  /* width: fit-content; */
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+}
+
+.cards {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* margin: 50px; */
+  flex-direction: column;
+}
+
+.card_1 > a > i {
+  color: #ccab81;
+  padding-top: 27px;
+}
+
+.navbar_items{
+  display:none;
+ position: absolute;
+ background-color:#ccab81;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+
+input[type=checkbox]:checked ~ .navbar_items{
+  display: block;
+ }
+
+ .navbar_items li:hover {
+  display: inline-block;
+  background-color: #ccab81;
+  transition: 0.3s ease;
+ }
+ .navbar_items li + li {
+  margin-top: 12px;
+ }
+ .hamburger {
+  display: block;
+ }
+
+ .product_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-basis: fit-content; */
+  flex-direction: column;
+}
+}
